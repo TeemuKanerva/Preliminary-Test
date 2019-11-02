@@ -15,7 +15,7 @@ export default (props) => {
 
     const [participantList, setParticipantList ] = useState([]);
     const [sortOrderAsc, setSortOrderAsc ] = useState(false);
-    const [activeColumn,setActiveCol] = useState(-1);
+    const [activeColumn,setActiveCol] = useState(SIGNUP_PARTICIPANT_ROW_ENUM.NAME);
 
     useEffect(() => {
         setParticipantList(createRandomParticipant());
@@ -52,15 +52,15 @@ export default (props) => {
         let copy = Object.assign([], participantList);
 
         if(columnId === SIGNUP_PARTICIPANT_ROW_ENUM.NAME) {
-            sortOrderAsc ? copy.sort((a, b) => { return a.name < b.name}) : copy.sort((a, b) => { return b.name < a.name});
+            sortOrderAsc ? copy.sort((a, b) => { return a.name.toUpperCase() < b.name.toUpperCase()}) : copy.sort((a, b) => { return b.name.toUpperCase() < a.name.toUpperCase()});
             setActiveCol(SIGNUP_PARTICIPANT_ROW_ENUM.NAME);
         }
         else if(columnId === SIGNUP_PARTICIPANT_ROW_ENUM.EMAIL) {
-            sortOrderAsc ? copy.sort((a, b) => { return a.email < b.email}) : copy.sort((a, b) => { return b.email < a.email});
+            sortOrderAsc ? copy.sort((a, b) => { return a.email.toUpperCase() < b.email.toUpperCase()}) : copy.sort((a, b) => { return b.email.toUpperCase() < a.email.toUpperCase()});
             setActiveCol(SIGNUP_PARTICIPANT_ROW_ENUM.EMAIL);
         }
         else if(columnId === SIGNUP_PARTICIPANT_ROW_ENUM.PHONENUMBER) {
-            sortOrderAsc ? copy.sort((a, b) => { return a.phonenumber < b.phonenumber}) : copy.sort((a, b) => { return b.phonenumber < a.phonenumber});
+            sortOrderAsc ? copy.sort((a, b) => { return a.phonenumber.toUpperCase() < b.phonenumber.toUpperCase()}) : copy.sort((a, b) => { return b.phonenumber.toUpperCase() < a.phonenumber.toUpperCase()});
             setActiveCol(SIGNUP_PARTICIPANT_ROW_ENUM.PHONENUMBER);
         }
         else return;

@@ -36,7 +36,7 @@ export default (props) => {
             <td><p>{props.name}</p></td> 
             <td><p>{props.email}</p></td>
             <td><p>{props.phonenumber}</p></td>
-            <td><button className="participant__icon-button" onClick={() => setEditMode(true)}><FontAwesomeIcon icon={faPen} size="24px" /></button></td>
+            <td><button className="participant__icon-button" onClick={() => setEditMode(true)}><FontAwesomeIcon icon={faPen} /></button></td>
             <td><button className="participant__icon-button" onClick={() => props.removeParticipant(props.id)}><FontAwesomeIcon icon={faTrash} /></button></td>
         </tr>);
     }
