@@ -1,0 +1,24 @@
+/*
+* SignUp List
+*/
+
+.participant-list {
+    width: 912px;
+    padding-left: 32px;
+}
+  
+.participant-list__attribute-header {
+    cursor: pointer;
+}
+
+.participant-list__title {
+    height: 75px;
+    position: relative;
+    top: 24px;
+}
+
+.participant-list__sort-button {
+    font-size: 12px;
+    position: relative;
+    left: 2px;
+}

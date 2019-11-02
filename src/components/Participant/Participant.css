@@ -1,0 +1,40 @@
+/*
+* SignUp Contact
+*/
+
+.participant {
+    height: 72px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+}
+  
+.participant__icon-button {
+    fill: #909090;
+    color: #909090;
+    position: relative;
+    font-size: 16px;
+    font-family: inherit;
+    border: 0;
+    padding: 0;
+    margin: 0px;
+    background: inherit;
+    height: 24px;
+    width: 24px;
+}
+
+.participant__primary-color {
+    color: #505050;
+}
+
+.participant__save-button, .participant__cancel-button {
+    right: 30px;
+}
+  
+.participant__cancel-button {
+    color: #07f;
+}
+
+.participant__save-button {
+    background: #07f;
+    color: #ffffff;
+}

@@ -1,0 +1,20 @@
+/*
+* SignUp Form
+*/
+
+.signup-form {
+  background: #ffffff;
+  height: 72px;
+  margin-bottom: 10px;
+}
+  
+.signup-form--spacing {
+  margin-left: 16px;
+  top: 16px;
+}
+
+.signup-form__submit_button {
+  float: right;
+  margin-right: 16px;
+  top: 16px;
+}

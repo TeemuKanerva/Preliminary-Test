@@ -1,22 +1,95 @@
-.App {
-  text-align: center;
+/*
+* General
+*/
+
+body {
+  background: #f1f1f1;
+  color: #757575;
+  padding-bottom: 150px;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
+input, button {
+  position: relative;
+  padding: 0px;
+  border: solid 1px;
+  color: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+  border: solid 1px #eeeeee;
+  background: #fafafa;
+  text-indent: 10px;
+  height: 38px;
 }
 
-.App-link {
-  color: #09d3ac;
+button {
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 0px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+p {
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+p {
+  color: #505050;
+}
+
+table, tr, th, td {
+  padding: 0px;
+  padding-left: 24px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+table {
+  text-align: left;
+  table-layout:fixed;
+  width: 100%;
+}
+
+.table-col-data {
+  width: 30%;
+}
+
+.table-col-edit {
+  width: 8%;
+}
+
+tr {
+  margin-left: 24px;
+  height: 48px;
+  color: #757575;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+th {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+body, tr {
+  color: #757575;
 }

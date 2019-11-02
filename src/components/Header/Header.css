@@ -1,0 +1,25 @@
+/*
+* Header
+*/
+
+.header {
+    background: #adb5bd;
+    height: 96px;
+    color: #ffffff;
+}
+  
+.header__logo-icon {
+  background: #ffffff;
+  position: relative;
+  left: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.header__logo-text {
+  margin: 0;
+  position: relative;
+  display: inline;
+  left: 76px;
+}
